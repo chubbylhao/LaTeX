@@ -1,0 +1,36 @@
+% -- coding: UTF-8 --
+\documentclass{article}
+
+% 导言区：调用宏包、进行文档的全局设置
+\usepackage[UTF8]{ctex}
+\usepackage[ruled, linesnumbered]{algorithm2e}
+
+% 算法部分
+\SetKwInOut{KwIn}{输入}
+\SetKwInOut{KwOut}{输出}
+\SetNlSty{}{}{:}
+
+% 正文区：书写文档的正式内容
+\begin{document}
+	
+	% 算法1
+	\begin{algorithm}
+		\renewcommand{\thealgocf}{3-1}
+		\renewcommand{\algorithmcfname}{降维算法}
+		\caption{PCA(主成份分析)}
+		\KwIn{样本集$ D=\left\{ x_{1},x_{2},\ldots,x_{m} \right\} $;\\低维空间维数$ d^{'} $.}
+		\KwOut{投影矩阵$ \textbf{W}=\left( w_{1},w_{2},\ldots,w_{d^{'}} \right) $.}
+		对所有样本进行中心化：$ x_{i}\leftarrow x_{i}-\frac{1}{m}\sum_{i=1}^{m}x_{i} $\;
+		计算样本的协方差矩阵$ \textbf{X}\textbf{X}^{T} $\;
+		对协方差矩阵$ \textbf{X}\textbf{X}^{T} $做特征值分解\;
+		取最大的$ d^{'} $个特征值所对应的特征向量$ w_{1},w_{2},\ldots,w_{d^{'}} $.
+	\end{algorithm}
+
+	% 算法2
+	\begin{algorithm}
+		\renewcommand{\thealgocf}{4-1}
+		\renewcommand{\algorithmcfname}{聚类算法}
+		\caption{K-means}
+	\end{algorithm}
+
+\end{document}
