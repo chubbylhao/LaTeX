@@ -1,0 +1,52 @@
+\documentclass[cn]{elegantbook}
+
+% 宏包
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% 全局
+\title{机器学习笔记}
+\subtitle{感受经典算法之美}
+\author{刘昊}
+\institute{哈尔滨工业大学}
+%\date{2022年11月21日}
+%\version{版本}
+\extrainfo{用心记录学习过程，方可于不经意处发现至美}
+\cover{cover.jpg}
+%\logo{}
+
+% 设置封面中间色块的颜色
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+
+% 目录深度，显示到三级标题足矣
+\setcounter{tocdepth}{2}
+
+% 分文件编译
+\includeonly{dimensionReduction}
+
+% --------------------------------------------------------
+
+\begin{document}
+
+% 封面标题部分
+%\maketitleT
+
+% 前言部分
+%\frontmatter
+
+% 目录部分
+%\tableofcontents
+
+% 正文部分
+\mainmatter
+\include{clustering}
+\include{dimensionReduction}
+
+% 附录部分
+%\appendix
+
+% 后记部分
+%\backmatter
+
+\end{document}

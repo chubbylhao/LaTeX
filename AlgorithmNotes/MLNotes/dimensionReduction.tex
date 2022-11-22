@@ -1,0 +1,57 @@
+\chapter{降维}
+\begin{introduction}
+	\item Definition of Theorem
+	\item Ask for help
+	\item Optimization Problem
+	\item Property of Cauchy Series
+	\item Angle of Corner
+\end{introduction}
+
+
+
+% --------------------------------------------------------
+\section{线性降维}
+
+\subsection{主成分分析(PCA)}
+
+\begin{center}
+	\begin{minipage}{15cm}
+		\begin{algorithm}[H]  
+			\caption{An example for format For \& While Loop in Algorithm}  
+			\begin{algorithmic}[1]  
+				\FOR{each $i\in [1,9]$}  
+				\STATE initialize a tree $T_{i}$ with only a leaf (the root);  
+				\STATE $T=T\cup T_{i};$  
+				\ENDFOR  
+				\FORALL {$c$ such that $c\in RecentMBatch(E_{n-1})$}  
+				\label{code:TrainBase:getc}  
+				\STATE $T=T\cup PosSample(c)$;  
+				\label{code:TrainBase:pos}  
+				\ENDFOR;  
+				\FOR{$i=1$; $i<n$; $i++$ }  
+				\STATE $//$ Your source here;  
+				\ENDFOR  
+				\FOR{$i=1$ to $n$}  
+				\STATE $//$ Your source here;  
+				\ENDFOR  
+				\STATE $//$ Reusing recent base classifiers.  
+				\label{code:recentStart}  
+				\WHILE {$(|E_n| \leq L_1 )and( D \neq \phi)$}  
+				\STATE Selecting the most recent classifier $c_i$ from $D$;  
+				\STATE $D=D-c_i$;  
+				\STATE $E_n=E_n+c_i$;  
+				\ENDWHILE  
+				\label{code:recentEnd}  
+			\end{algorithmic}  
+		\end{algorithm}  
+	\end{minipage}
+\end{center}
+
+\begin{theorem}{theorem name}{label}
+	这是一个有名字和标签的定理。
+	用\ref{thm:label} 来引用这个定理。
+\end{theorem}
+
+
+% --------------------------------------------------------
+\section{非线性降维}
